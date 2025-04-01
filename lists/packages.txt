@@ -2,10 +2,8 @@ nmap
 net-tools
 htop
 curl
-vim
 htop
 sudo
-git
 tree
 thefuck
 mtr
