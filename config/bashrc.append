@@ -1,2 +1,11 @@
 alias ll='ls -la --color=auto'
+alias gs='git status'
+echo "Bienvenue chacal, $(whoami)!"
+echo "Il est actuellement : $(date)"
 PS1='\u@\h:\w\$ '
+DAY_OF_WEEK=$(date +%u)
+DAYS_UNTIL_WEEKEND=$((5 - DAY_OF_WEEK))
+if [ "$DAYS_UNTIL_WEEKEND" -lt 0 ]; then
+    DAYS_UNTIL_WEEKEND=0
+fi
+echo "Il reste $DAYS_UNTIL_WEEKEND jour(s) avant le week-end ! 🎉"

@@ -2,3 +2,11 @@ set linenumbers
 set softwrap
 set tabsize 4
 set mouse
+set smooth
+
+syntax "bash" "\.sh$"
+color green "\b(if|then|else|fi|for|while|do|done|return)\b"
+color cyan "\b(function|local)\b"
+color yellow "\b(\$[A-Za-z_][A-Za-z0-9_]*)\b"
+bind ^S savefile
+bind ^Q quit
