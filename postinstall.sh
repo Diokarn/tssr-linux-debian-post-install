@@ -109,7 +109,7 @@ if [ -f /etc/ssh/sshd_config ]; then #Vérifie que le fichier de conf sshd_confi
   systemctl restart ssh #Redémmare le service SSH pour appliquer les changements
   log "SSH configured to accept key-based authentication only." #Log que SSH est config pour accepter uniquement l'authentification par clé SSH
 else
-  log "sshd_config file not found." #Log un message d'erreur si le fichier sshd_config n'existe pas
+  log "sshd_config file not found." #Log un message d'erreur si le fichier sshd_config n'est pas présent
 fi
 
 log "Post-installation script completed." #Log que le script est terminé

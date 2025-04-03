@@ -10,3 +10,4 @@ color cyan "\b(function|local)\b"
 color yellow "\b(\$[A-Za-z_][A-Za-z0-9_]*)\b"
 bind ^S savefile
 bind ^Q quit
+ 
