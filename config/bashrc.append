@@ -3,4 +3,3 @@ alias gs='git status'
 echo "Bienvenue chacal, $(whoami)!"
 echo "Il est actuellement : $(date)"
 PS1='\u@\h:\w\$ '
-echo "Il reste 4 jours avant le week-end !🎉"
